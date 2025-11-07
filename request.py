@@ -1,5 +1,6 @@
 import requests
 
+csrf-token =
 url = "https://piazza.com/logic/api?method=network.get_my_feed"
 
 headers = {
@@ -35,3 +36,16 @@ response = requests.post(url, headers=headers, json=data)
 # if the API returns gzip, requests automatically handles decompression
 print(response.status_code)
 print(response.json())  # pretty-prints parsed JSON
+
+posts = response.json()
+for post in posts:
+
+
+
+
+
+
+
+#iterate through posts and get replies
+
+
